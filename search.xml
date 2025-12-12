@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>Spark</title>
+      <link href="/2025/12/12/Spark/"/>
+      <url>/2025/12/12/Spark/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1、Stage（执行阶段）与Task（执行任务）划分"><a href="#1、Stage（执行阶段）与Task（执行任务）划分" class="headerlink" title="1、Stage（执行阶段）与Task（执行任务）划分"></a><strong>1、Stage（执行阶段）与Task（执行任务）划分</strong></h3><p>Task是Spark中最小的计算单位，以线程的方式运行在Executor进程中，执行具体的计算任务。每个Stage中最后一个RDD的分区个数决定了生成Task的个数。同一个Stage中不同Task是独立且同构的，因此可以并行运行没有先后之分。</p><ul><li>首先确定应用（application）会产生哪些作业（job），Spark根据action操作顺序将应用划分为不同作业；</li><li>其次根据逻辑处理流程中的数据依赖关系（ShuffleDependency），将每个job的处理流程拆分成执行阶段（stage）；</li><li>最后，对于每一个stage，根据RDD的分区个数确定执行的task个数和种类。</li></ul><h3 id="2、为什么要拆分执行阶段"><a href="#2、为什么要拆分执行阶段" class="headerlink" title="2、为什么要拆分执行阶段"></a><strong>2、为什么要拆分执行阶段</strong></h3><ul><li>同一个stage中多个操作放在同一个task里进行处理，使得操作可以进行串行、流水线式的处理，提高数据处理效率</li><li>方便容错，一个stage失效只需要重新运行这个stage，不需要运行整个job</li></ul><h3 id="3、Spark为什么让Task以线程方式运行而不是以进程方式运行"><a href="#3、Spark为什么让Task以线程方式运行而不是以进程方式运行" class="headerlink" title="3、Spark为什么让Task以线程方式运行而不是以进程方式运行"></a><strong>3、Spark为什么让Task以线程方式运行而不是以进程方式运行</strong></h3><ul><li><p>如果每个Task是一个Java进程：</p></li><li><ul><li>好处：每个Task独享进程资源，互不干扰，监控管理方便</li><li>坏处：不方便共享数据，不同Task读取同一份数据需要将数据加载到每个Task进程中；进程的启动和停止需要做很多初始化的工作，应用执行过程中需要不断启停Task，执行效率较低。</li></ul></li></ul><h3 id="4、宽依赖与窄依赖"><a href="#4、宽依赖与窄依赖" class="headerlink" title="4、宽依赖与窄依赖"></a><strong>4、宽依赖与窄依赖</strong></h3><ul><li>窄依赖：新生成的RDD中的每个分区都依赖父RDD中的一部分分区</li><li>宽依赖：新生成的RDD中的每个分区依赖父RDD每个分区中的一部分</li></ul><p>宽依赖和窄依赖的区别是child RDD的每个分区是否完全依赖parent RDD的一个（窄依赖）或者多个（宽依赖）分区。</p><h3 id="5、Spark中的shuffle框架"><a href="#5、Spark中的shuffle框架" class="headerlink" title="5、Spark中的shuffle框架"></a><strong>5、Spark中的shuffle框架</strong></h3><h4 id="5-1-Shuffle-Write"><a href="#5-1-Shuffle-Write" class="headerlink" title="5.1 Shuffle Write"></a><strong>5.1 Shuffle Write</strong></h4><ul><li>BypassMergeSortShuffleWrite</li></ul><img src="https://gitee.com/zxh6190/zxh_upload_imgs/raw/master/20251212170214497.png" alt="img" align="left"><ul><li>SortShuffleWriter</li></ul> <img src="https://gitee.com/zxh6190/zxh_upload_imgs/raw/master/20251212170321695.png" alt="img" align="left"><h4 id="5-2-Shuffle-Read"><a href="#5-2-Shuffle-Read" class="headerlink" title="5.2 Shuffle Read"></a><strong>5.2 Shuffle Read</strong></h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 大数据 </tag>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> 总结 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>firstArtitle</title>
       <link href="/2025/12/11/firstArtitle/"/>
       <url>/2025/12/11/firstArtitle/</url>

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>hexo 操作命令</title>
+      <link href="/2026/01/16/hexo-%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
+      <url>/2026/01/16/hexo-%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1、清理、生成、部署命令"><a href="#1、清理、生成、部署命令" class="headerlink" title="1、清理、生成、部署命令"></a>1、清理、生成、部署命令</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo c &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><h3 id="2、新建笔记"><a href="#2、新建笔记" class="headerlink" title="2、新建笔记"></a>2、新建笔记</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &#x27;hexo-操作命令&#x27;</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/zxh6190/zxh_upload_imgs/raw/master/20260116122655389.png" alt="image-20260116122654453"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>数据建模</title>
       <link href="/2025/12/15/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1/"/>
       <url>/2025/12/15/%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1/</url>

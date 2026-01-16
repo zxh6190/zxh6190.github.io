@@ -6,7 +6,7 @@
   <link href="https://zxh6190.github.io/atom.xml" rel="self"/>
   
   <link href="https://zxh6190.github.io/"/>
-  <updated>2025-12-15T02:18:00.054Z</updated>
+  <updated>2026-01-16T04:27:08.120Z</updated>
   <id>https://zxh6190.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 操作命令</title>
+    <link href="https://zxh6190.github.io/2026/01/16/hexo-%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/"/>
+    <id>https://zxh6190.github.io/2026/01/16/hexo-%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4/</id>
+    <published>2026-01-16T04:23:20.000Z</published>
+    <updated>2026-01-16T04:27:08.120Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1、清理、生成、部署命令"><a href="#1、清理、生成、部署命令" class="headerlink" title="1、清理、生成、部署命令"></a>1、清理、生成、部署命令</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo c &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><h3 id="2、新建笔记"><a href="#2、新建笔记" class="headerlink" title="2、新建笔记"></a>2、新建笔记</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &#x27;hexo-操作命令&#x27;</span><br></pre></td></tr></table></figure><p><img src="https://gitee.com/zxh6190/zxh_upload_imgs/raw/master/20260116122655389.png" alt="image-20260116122654453"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;1、清理、生成、部署命令&quot;&gt;&lt;a href=&quot;#1、清理、生成、部署命令&quot; class=&quot;headerlink&quot; title=&quot;1、清理、生成、部署命令&quot;&gt;&lt;/a&gt;1、清理、生成、部署命令&lt;/h3&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="https://zxh6190.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>数据建模</title>
